@@ -10,7 +10,15 @@
 // - Executar a operação correta e retornar o resultado;
 
 function calcular(num1, num2, operador) {
-  // TODO: implementar função
+  if (num1 != typeof(Number) && num2 != typeof(Number)){
+    return "Erro: parâmetros inválidos"
+  }
+  else if (num1 == 0  || num2 == 0){
+    return "Erro: divisão por zero"
+  }
+  else if (operador != '+' || operador != '-' || operador != '*' || operador != '/'){
+    return "Erro: operação inválida"
+  }
 }
 
 
